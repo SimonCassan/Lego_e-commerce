@@ -11,14 +11,15 @@
 }
 
 body {
-  background-color: #ccc;
+  background-color: #eee;
 }
 
 main {
-  min-height: 100dvh;
+  min-height: calc(100dvh - 48px - 24px);
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 img {
