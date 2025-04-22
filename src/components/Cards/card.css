@@ -1,6 +1,6 @@
 .card {
-    max-width: 300px;
-    min-height: 500px;
+    width: 315px;
+    height: 500px;
     border-radius: 0.5rem;
     background-color: #fff;
     padding: 2rem 1rem;
@@ -23,15 +23,6 @@
     padding: 0.5rem 1rem;
     color: #fff;
 }
-
-/* .card-btn {
-    background-color: rgb(172 170 225);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    color: #000;
-    cursor: pointer;
-    transition: all 0.25s;
-} */
 
 .card-btn {
     background-color: rgb(172, 170, 225);
@@ -56,9 +47,13 @@
 
 
 
+.card h2 {
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 1.25rem;
+}
 
-
-img {
+.card img {
     height: 225px;
     object-fit: contain;
 }
