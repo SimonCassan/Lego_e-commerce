@@ -1,0 +1,9 @@
+.basket {
+    padding: 0.5rem 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.basket h2 {
+    margin: 2rem 0;
+}
