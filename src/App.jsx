@@ -11,6 +11,11 @@ function App() {
   const addToCart = (product) => {
     setCart((prevCart) => [...prevCart, product])
   };
+  const removeFromCart = indexToRemove => {
+    setCart((prevCart) => prevCart.filter((item, index) =>
+      index !== indexToRemove
+    ));
+  }
   const total = cart.reduce((sum, product) => sum + product.price, 0);
 
   const [isCartVisible, setIsCartVisible] = useState(false);
@@ -23,7 +28,7 @@ function App() {
       <Header toggleCart={toggleCart} />
       <main>
         <CardsList addToCart={addToCart} />
-        {isCartVisible && <Cart products={cart} total={total} />}
+        {isCartVisible && <Cart products={cart} removeFromCart={removeFromCart} total={total} />}
       </main>
       <Footer />
     </>
