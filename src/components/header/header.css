@@ -1,4 +1,36 @@
 .header {
     background-color: #fff;
-    padding-left: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    display: flex;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.shoppingCart {
+    all: unset;
+    cursor: pointer;
+}
+
+.shoppingCart img {
+    width: 30px;
+    margin-right: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.shoppingCart img:hover {
+    transform: scale(1.1);
+}
+
+.shoppingCart img:active {
+    transform: scale(0.95);
 }
