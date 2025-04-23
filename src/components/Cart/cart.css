@@ -1,4 +1,4 @@
-.basket {
+.cart {
     width: 250px;
     flex-shrink: 0;
     padding: 0.5rem 1rem;
@@ -6,11 +6,11 @@
     background-color: #fff;
 }
 
-.basket h2 {
+.cart h2 {
     margin: 2rem 0;
 }
 
-.basket-total {
+.cart-total {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     background-color: rgb(172, 170, 225);

@@ -1,6 +1,6 @@
 import './card.css'
 
-function Card({ product, addToBasket }) {
+function Card({ product, addToCart }) {
     const { name, tag, price, imageSrc, available } = product;
     if (!available) return null;
     return (
@@ -11,7 +11,7 @@ function Card({ product, addToBasket }) {
                 <p className="card-tag">{tag}</p>
                 <p>{price}€</p>
                 <p>{available ? "Disponible" : "En rupture"}</p>
-                <button className="card-btn" onClick={() => addToBasket(product)}>Ajouter</button>
+                <button className="card-btn" onClick={() => addToCart(product)}>Ajouter</button>
             </div>
         </div >
     );

@@ -2,23 +2,28 @@ import "./App.css";
 import Header from "./components/header/Header"
 import Footer from "./components/footer/Footer";
 import CardsList from "./components/CardsList/CardsList";
-import Basket from "./components/Basket/Basket";
+import Cart from "./components/Cart/Cart";
 import { useState } from "react";
 
 
 function App() {
-  const [basket, setBasket] = useState([]);
-  const addToBasket = (product) => {
-    setBasket((prevBasket) => [...prevBasket, product])
+  const [cart, setCart] = useState([]);
+  const addToCart = (product) => {
+    setCart((prevCart) => [...prevCart, product])
   };
-  const total = basket.reduce((sum, product) => sum + product.price, 0);
+  const total = cart.reduce((sum, product) => sum + product.price, 0);
+
+  const [isCartVisible, setIsCartVisible] = useState(false);
+  const toggleCart = () => {
+    setIsCartVisible(prev => !prev);
+  };
 
   return (
     <>
-      <Header />
+      <Header toggleCart={toggleCart} />
       <main>
-        <CardsList addToBasket={addToBasket} />
-        <Basket products={basket} total={total} />
+        <CardsList addToCart={addToCart} />
+        {isCartVisible && <Cart products={cart} total={total} />}
       </main>
       <Footer />
     </>
