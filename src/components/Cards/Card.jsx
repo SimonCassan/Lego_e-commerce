@@ -1,6 +1,9 @@
 import './card.css'
 
 function Card({ src, name, tag, price, available }) {
+    const addToBasket = () =>
+        alert(`Le produit ${name} a été ajouté au panier !`);
+
     if (!available) return null;
     return (
         <div className="card" >
@@ -10,7 +13,7 @@ function Card({ src, name, tag, price, available }) {
                 <p className="card-tag">{tag}</p>
                 <p>{price}€</p>
                 <p>{available ? "Disponible" : "En rupture"}</p>
-                <a className="card-btn" href="#">Ajouter</a>
+                <a className="card-btn" href="#" onClick={addToBasket}>Ajouter</a>
             </div>
         </div >
     );
