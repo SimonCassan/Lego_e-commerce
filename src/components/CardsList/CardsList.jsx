@@ -3,11 +3,11 @@ import "./cardslist.css";
 import Card from "../Cards/Card";
 import products from "../../data/products";
 
-function CardsList() {
+function CardsList({ addToBasket }) {
     return (
         <div className="cards-list">
-            {products.map(({ name, tag, price, imageSrc, available }, index) =>
-                <Card key={index} src={imageSrc} name={name} tag={tag} price={price} available={available} />
+            {products.map((product, index) =>
+                <Card key={index} product={product} addToBasket={addToBasket} />
             )}
         </div>
     );
