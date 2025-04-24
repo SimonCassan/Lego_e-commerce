@@ -9,6 +9,7 @@
 
 .logo {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -33,4 +34,23 @@
 
 .shoppingCart img:active {
     transform: scale(0.95);
+}
+
+.shoppingCart::after {
+    font-weight: 600;
+    font-size: 1.1rem;
+    content: attr(data-count);
+    position: absolute;
+    right: 5px;
+    top: 22.5px;
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .logo img {
+        width: 30px;
+    }
 }
