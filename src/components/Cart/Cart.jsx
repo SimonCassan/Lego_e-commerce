@@ -7,7 +7,7 @@ function Cart({ products, removeFromCart, total }) {
             {products.length === 0 ? <p>Votre panier est vide pour le moment</p> :
                 <>
                     <ul>
-                        {products.map((product, index) => <li onClick={() => removeFromCart(index)} key={index}>{product.name} : {product.price}€</li>)}
+                        {products.map((product, index) => <li onClick={() => removeFromCart(index)} key={index}>{product.name} : {product.price}€&nbsp;x&nbsp;{product.quantity}</li>)}
                     </ul>
                 </>
             }
