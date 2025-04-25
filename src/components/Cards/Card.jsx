@@ -2,7 +2,6 @@ import './card.css'
 
 function Card({ product, addToCart }) {
     const { name, tag, price, imageSrc, available } = product;
-    if (!available) return null;
     return (
         <div className="card" >
             <img src={imageSrc} alt={`Illustration ${name}`} />
