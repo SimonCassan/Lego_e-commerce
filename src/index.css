@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppins, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -17,6 +17,7 @@ body {
 main {
   display: flex;
   gap: 1rem;
+  justify-content: space-between;
 }
 
 img {
@@ -29,6 +30,16 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+label {
+  position: absolute;
+  left: 5px;
+}
+
+input,
+select {
+  margin-left: 0.5rem;
 }
 
 @media (prefers-color-scheme: light) {

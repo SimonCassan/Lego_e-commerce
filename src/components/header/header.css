@@ -1,5 +1,5 @@
 .header {
-    background-color: #fff;
+    background-color: #ffd502;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -15,6 +15,12 @@
 
 .logo img {
     width: 50px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 .shoppingCart {
@@ -39,18 +45,26 @@
 .shoppingCart::after {
     font-weight: 600;
     font-size: 1.1rem;
-    content: attr(data-count);
+    content: attr(data-count, 0);
     position: absolute;
-    right: 5px;
-    top: 22.5px;
+    right: 12px;
+    top: 25.5px;
 }
 
 @media screen and (max-width: 425px) {
+    .header {
+        align-items: baseline;
+    }
+
     h1 {
         font-size: 1.5rem;
     }
 
     .logo img {
         width: 30px;
+    }
+
+    .shoppingCart::after {
+        top: 20px;
     }
 }
