@@ -1,6 +1,7 @@
 .btn {
     cursor: pointer;
     border: none;
+    background-color: #fff;
 }
 
 .search-btn {
@@ -8,13 +9,12 @@
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
-    background: #fff;
     align-items: center;
     justify-content: center;
 }
 
 .search-form {
-    padding: 0px;
+    padding: 0 1rem;
     display: flex;
     align-items: center;
     background-color: rgb(255, 255, 255);
@@ -24,6 +24,8 @@
 
 .search-input {
     border: none;
+    outline: none;
+    padding: 1rem;
 }
 
 .search-bg {
@@ -34,4 +36,9 @@
     height: 100%;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+svg {
+    width: 14px;
+    height: 14px;
 }
