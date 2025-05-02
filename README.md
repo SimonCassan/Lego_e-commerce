@@ -1,12 +1,34 @@
-# React + Vite
+# 🧱 Lego Shop - Version Simplifiée
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur **Lego Shop**, une reproduction simplifiée de la boutique officielle Lego, développée avec **React**.
 
-Currently, two official plugins are available:
+## 🚀 Objectifs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Appliquer les fondamentaux de React (composants, props, state, events).
+- Mettre en place une structure de boutique en ligne (affichage de produits, panier, filtrage).
+- Gérer l’état global d’une application.
+- Utiliser un design responsive simple.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies utilisées
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- CSS
+
+## 📦 Fonctionnalités
+🔍 Liste des produits avec nom, image et prix.
+
+🛒 Ajout et suppression d’articles dans le panier.
+
+🧾 Affichage du panier avec total dynamique.
+
+📱 Interface responsive.
+
+## 📸 Aperçu
+![](./src/assets/screenshot.jpg)
+
+## ✍️ Auteur
+Projet réalisé par Simon Cassan dans le cadre d’un exercice React.  
+***
+  
+*Ce projet est une reproduction pédagogique et non affiliée à Lego Group.*
